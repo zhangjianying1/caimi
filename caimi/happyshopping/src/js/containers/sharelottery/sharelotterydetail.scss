@@ -1,0 +1,95 @@
+
+.share-lottery-detail-cont{
+  height: 100%;
+}
+.share-lottery-detail{
+  background: #efefef;
+}
+
+.share-lottery-comd{
+  .comd-left{
+    width: .42rem;
+    -webkit-box-align: start;
+    box-align: start;
+    .c-l-img{
+      width: .42rem;
+      height: .42rem;
+    }
+  }
+
+
+}
+
+
+.share-detail-user{
+  padding: .08rem 0 .11rem .1rem;
+  border-bottom: 1px solid #e5e5e5;
+
+  .comd-left{
+    -webkit-pack-align: center;
+    pack-align: center;
+    margin-right: .12rem;
+
+  }
+  .share-username{
+    padding-top: .03rem;
+    line-height: .2rem;
+
+    time{
+      font-size: .11rem;
+      color: #a7a7a7;
+    }
+  }
+}
+
+.share-des{
+  padding: .07rem .1rem;
+  color: #666;
+  line-height: .29rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+.share-msg{
+  padding: .12rem .1rem 0;
+
+  font-size: .13rem;
+  line-height: .26rem;
+  img{
+    margin-top: .1rem;
+  }
+}
+
+.relsease-box{
+  height: .44rem;
+  padding: 0 .15rem;
+  background: #fff;
+  display: -webkit-box;
+  display: box;
+  -webkit-box-align: center;
+  box-align: center;
+  textarea{
+    display: block;
+    resize: none;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    height: .34rem;
+    padding: .1rem .1rem 0;
+    border: 1px solid #e2e2e2;
+    background: #efefef;
+    color: #333;
+    overflow: hidden;
+    outline: none;
+    font-size: .13rem;
+  }
+
+  button{
+    display: block;
+    width: 30%;
+    height: .34rem;
+    line-height: .34rem;
+    border: none;
+    font-size: .15rem;
+    color: #fff;
+    background: #ff5500;
+    margin-left: .1rem;
+  }
+}

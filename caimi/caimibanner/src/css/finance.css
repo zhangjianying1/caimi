@@ -1,0 +1,36 @@
+.finance .user-msg {
+  background: #f2f2f2; }
+  .finance .user-msg .l-b-left {
+    height: .64rem;
+    margin: .035rem .12rem .035rem 0; }
+  .finance .user-msg img {
+    width: .64rem;
+    height: .64rem;
+    border: 1px solid #b9b9b9;
+    border-radius: 50%; }
+  .finance .user-msg .l-b-right h2 {
+    font-size: .18rem;
+    line-height: 1.5; }
+  .finance .user-msg .l-b-right p {
+    font-size: .15rem;
+    color: #999;
+    line-height: 1.5; }
+
+.text-list {
+  border-top: 1px solid #d2d2d2; }
+  .text-list li {
+    padding: 0 .15rem;
+    border-bottom: 1px solid #d2d2d2;
+    overflow: hidden; }
+    .text-list li label {
+      width: 1.05rem;
+      float: left;
+      line-height: .41rem;
+      font-size: .15rem; }
+    .text-list li p {
+      padding: .08rem 0;
+      font-size: .14rem;
+      color: #999; }
+
+.finance-btn {
+  padding: .25rem .3rem; }

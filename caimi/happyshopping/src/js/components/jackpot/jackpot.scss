@@ -1,0 +1,86 @@
+/* 最新中奖 */
+.jackpot-list{
+  background: #efefef;
+  // 倒计时
+  .jackpot-conntdown-body{
+    padding-bottom: .11rem;
+
+    p{padding: .26rem 0;}
+
+    .countdown{
+
+      line-height: .32rem;
+
+      .icon{
+        display: inline-block;
+        width: .32rem;
+        height: .32rem;
+        background-size: cover;
+        vertical-align: middle;
+
+        span{
+          font-size: .2rem;
+
+        }
+
+      }
+      .icon-clock{
+        background-image: url(../../../images/icon-clock.png);
+      }
+    }
+  }
+  a{
+    display: -webkit-box;
+    display: box;
+    padding: 0 .15rem .06rem;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+  }
+  .comd-left {
+    display: -webkit-box;
+    display: box;
+    width: 1rem;
+    -webkit-box-align: center;
+    box-align: center;
+    .c-l-img{
+      width: 1rem;
+      height: 1rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 0;
+      position: relative;
+      .icon{
+        width: .45rem;
+        height: .4rem;
+        position: absolute;
+        left: 0;
+        top: -.14rem;
+        background-size: cover;
+
+      }
+      .icon-share-y{
+        background-image: url(../../../images/share-y.png);
+      }
+      .icon-share-n{
+        background-image: url(../../../images/share-n.png);
+      }
+    }
+  }
+  .comd-right{
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    padding-left: .27rem;
+    h2{
+      padding: .07rem 0;
+      font-size: .16rem;
+      line-height: .26rem;
+    }
+    p{
+      font-size: .12rem;
+      color: #a7a7a7;
+      line-height: .24rem;
+    }
+  }
+}
+

@@ -1,0 +1,80 @@
+<div class="row" >
+    <form  class="form-horizontal" name="agentform" ng-submit="agentSub()">
+        <div class="form-group">
+            <label class="col-md-2 control-label">代理商姓名</label>
+            <div class="col-md-10">
+                <input class="form-control" type="text" ng-model="name" name="name" required placeholder="代理商姓名">
+            </div>
+        </div>
+        <p class="col-md-offset-2 error" ng-show="agentform.name.$dirty && agentform.name.$invalid">
+            <small ng-show="agentform.name.$error.required">不能为空</small>
+        </p>
+        <div class="form-group">
+            <label class="col-md-2 control-label">代理商电话</label>
+            <div class="col-md-10">
+                <input class="form-control" type="text" name="mobile" ng-model="mobile" required placeholder="代理商电话">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">地域：</label>
+            <div class=" col-md-10">
+                <city-select>
+                    <select  class="form-control" ng-model="province" ng-change="change(province, 'city')">
+                        <option value="">省</option>
+                        <option ng-repeat="a in oProvince" value="{{ a.name }}">{{ a.name }}</option>
+                    </select>
+                    <select  class="form-control" ng-model="city"  ng-change="change(city, 'area')">
+                        <option value="">市</option>
+                        <option ng-repeat="a in oCity" value="{{ a.name }}">{{ a.name }}</option>
+                    </select>
+                    <select  class="form-control" ng-model="area"  ng-change="change(area)" >
+                        <option value="">地区</option>
+                        <option ng-repeat="a in oArea" value="{{ a.name}}">{{ a.name }}</option>
+                    </select>
+                </city-select>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">
+                渠道类型
+            </label>
+            <div class="col-md-10">
+                <select  class="form-control" ng-model="channeltype" required>
+                    <option value="">选择</option>
+                    <option ng-repeat="i in ['投注站','自助投注站','社会渠道']" value="{{i}}" >{{i}}</option>
+                </select>
+            </div>
+        </div>
+        <p class="col-md-offset-2 error" ng-show="agentform.usertype.$dirty && agentform.usertype.$invalid">
+            <small ng-show="agentform.usertype.$error.required">不能为空</small>
+        </p>
+        <div class="form-group">
+            <label class="col-md-2 control-label">
+                用户状态
+            </label>
+            <div class="col-md-10" >
+                <select  class="form-control" ng-model="userstatus" required>
+                    <option value="">选择</option>
+                    <option ng-repeat="i in ['活动','锁定','注销']" value="{{i}}" >{{i}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">
+                用户级别
+            </label>
+            <div class="col-md-10">
+                <select  class="form-control" ng-model="userlevel" required>
+                    <option value="">选择</option>
+                    <option ng-repeat="i in ['lv1','lv2','lv3']" value="{{i}}" >{{i}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                <button class="btn btn-primary" ng-disabled="agentform.$invalid">添加</button>
+            </div>
+        </div>
+    </form>
+</div>

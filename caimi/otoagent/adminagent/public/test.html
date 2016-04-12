@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    *{
+        padding:0;
+        margin:0;
+    }
+    div{
+        background:#f90;
+        height:100px;
+        width:100px;
+        padding:100px 0 0 0;
+    }
+    input{
+        background:#f00;
+        width:100px;
+        padding:20px 0 0;
+        line-height:20px;
+    }
+</style>
+</head>
+<body>
+<div>click me</div>
+<button>click me</button>
+<input type="radio" id="box">
+<script>
+
+        var o = document.querySelector('#box');
+        o.onclick = function(){
+            console.log(o.checked = true)
+            console.log(o.value)
+        }
+
+</script>
+</body>
+</html>

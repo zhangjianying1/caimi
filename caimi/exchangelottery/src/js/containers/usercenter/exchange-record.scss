@@ -1,0 +1,28 @@
+.exchange-list{
+
+  dt{
+
+  }
+  dd{
+    display: -webkit-box;
+    display: box;
+    height: .66rem;
+    padding: 0 .15rem;
+    border-bottom: 1px solid #d2d2d2;
+    background: #fff;
+    -webkit-box-pack: justify;
+    box-pack: justify;
+    -webkit-box-align: center;
+    box-align: center;
+    font-size: .16rem;
+    .coupon-msg{
+      em{
+        color: #999;
+      }
+    }
+    &:nth-of-type(1){
+      border-top: 1px solid #d2d2d2;
+    }
+  }
+}
+

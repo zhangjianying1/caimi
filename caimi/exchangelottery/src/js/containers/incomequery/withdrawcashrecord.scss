@@ -1,0 +1,40 @@
+.withdrawcashrecord{
+  .w-c-record-list{
+
+    dd:nth-of-type(1){
+      border-top: 1px solid #d2d2d2;
+    }
+    .w-c-name{
+      height: .5rem;
+      line-height: .5rem;
+      font-size: .16rem;
+    }
+    .w-c-status{
+      font-size: .13rem;
+    }
+  }
+}
+.column-justify{
+  display: -webkit-box;
+  display: box;
+  padding: 0 .15rem;
+  border-bottom: 1px solid #d2d2d2;
+  -webkit-box-pack: justify;
+  box-pack: justify;
+  -webkit-box-align: center;
+  box-align: center;
+  background: #fff;
+  .status{
+    display: inline-block;
+    padding: 0 .125rem;
+    margin-left: .05rem;
+    line-height: .18rem;
+    font-size: .11rem !important;
+    color: #fff;
+    background: #f25952;
+    border-radius: .18rem;
+    &:disabled{
+      background: #999;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+var entry = angular.module('adminApp', ['ui-Route', 'ui-bootstrap', 'ngAnitinze'])

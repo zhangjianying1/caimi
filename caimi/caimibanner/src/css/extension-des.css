@@ -1,0 +1,27 @@
+.body {
+  background: #fff; }
+
+.extension-user-article {
+  padding: 0 .15rem; }
+  .extension-user-article h1 {
+    padding-top: .1rem;
+    font-size: .2rem; }
+  .extension-user-article .publish-time {
+    padding: .03rem 0 .11rem;
+    font-size: .15rem; }
+    .extension-user-article .publish-time time {
+      padding-right: .05rem;
+      color: #999; }
+  .extension-user-article article {
+    font-size: .14rem;
+    line-height: .22rem;
+    text-indent: 2em; }
+  .extension-user-article .extension-user-code {
+    padding-top: .235rem;
+    text-align: center; }
+    .extension-user-article .extension-user-code img {
+      display: inline-block;
+      width: 1.85rem; }
+    .extension-user-article .extension-user-code p {
+      padding-top: .07rem;
+      font-size: .14rem; }

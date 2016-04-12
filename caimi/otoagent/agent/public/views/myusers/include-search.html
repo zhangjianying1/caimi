@@ -1,0 +1,32 @@
+<div>
+
+    <div class="box-border-cont">
+        <div class="b-b-tit">
+            <a ng-href="/views/#/userlist/all">
+                <i class="icon-all"></i><span class="text">全部用户（17人）</span><b class="icon-more"></b>
+            </a>
+        </div>
+    </div>
+    <div class="box-border-cont">
+
+        <div class="b-b-tit">
+            <a ng-href="javascript:;">
+            <i class="icon-one"></i><span class="text">查询站内单个用户</span>
+            </a>
+        </div>
+        <div class="show-dorp">
+            <div class="model-search">
+                <form action="{{ '/views/#/userlist/' + phone }}">
+                    <input type="text"  placeholder="输入要查询的账号手机号"  ng-model="phone"><button class="search-sub" type="submit"  form="search">查询</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="box-border-cont">
+        <div class="b-b-tit">
+            <a ng-href="/views/#/userlist/notrecharge">
+                <i class="icon-empty"></i><span class="text">查询站内为充值用户</span><b class="icon-more"></b>
+            </a>
+        </div>
+    </div>
+</div>

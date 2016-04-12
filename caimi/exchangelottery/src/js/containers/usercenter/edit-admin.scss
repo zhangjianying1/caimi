@@ -1,0 +1,31 @@
+body{
+  background: #fff;
+}
+/* 编辑管理员 */
+.edit-admin{
+  overflow: hidden;
+  .icon-addadmin{
+    width: .22rem;
+    height: .25rem;
+    margin-right: .1rem;
+    background-image: url(../../../images/icon-addadmin.png);
+  }
+}
+
+.admin-list{
+  box-shadow: 0 0 1px rgba(7 , 0 , 2 , .12);
+  dt{
+    height: .44rem;
+    border-top: 1px solid #d2d2d2;
+    background: #e7e7e7;
+    box-shadow: 0 0 1px rgba(7 , 0 , 2 , .12);
+  }
+  dd{
+    height: .5rem;
+  }
+  .user-des img{
+    width: .27rem;
+    height: .27rem;
+    border-radius: .135rem;
+  }
+}

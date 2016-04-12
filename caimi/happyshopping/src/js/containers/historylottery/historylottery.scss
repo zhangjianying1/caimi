@@ -1,0 +1,56 @@
+.history-lottery-list{
+  li{
+    margin-bottom: .05rem;
+  }
+  a{
+    display: block;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+  }
+}
+.history-lottery-issue{
+  padding: 0 .14rem;
+  border-bottom: 1px solid #e5e5e5;
+  line-height: .36rem;
+  font-size: .13rem;
+  overflow: hidden;
+  .history-lottery-time{
+    float: right;
+  }
+}
+
+.history-lottery-msg{
+  display: -webkit-box;
+  display: box;
+
+  .comd-left{
+    display: -webkit-box;
+    display: box;
+    width: .4rem;
+    padding-left: .03rem;
+    -webkit-box-align: center;
+    box-align: center;
+    .c-l-img{
+      width: .4rem;
+      height: .4rem;
+      border-radius: 50%;
+
+    }
+  }
+
+  .comd-right{
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    padding: .05rem 0 .05rem .17rem;
+
+
+    p{
+      line-height: .25rem;
+      color: #666;
+
+
+    }
+  }
+
+}

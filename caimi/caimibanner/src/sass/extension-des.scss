@@ -1,0 +1,35 @@
+.body{
+  background: #fff;
+}
+.extension-user-article{
+  padding: 0 .15rem;
+  h1{
+    padding-top: .1rem;
+    font-size: .2rem;
+  }
+  .publish-time{
+    padding: .03rem 0 .11rem;
+    font-size: .15rem;
+    time{
+      padding-right: .05rem;
+      color: #999;
+    }
+  }
+  article{
+    font-size: .14rem;
+    line-height: .22rem;
+    text-indent: 2em;
+  }
+  .extension-user-code{
+    padding-top: .235rem;
+    text-align: center;
+    img{
+      display: inline-block;
+      width: 1.85rem;
+    }
+    p{
+      padding-top: .07rem;
+      font-size: .14rem;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+
+.platform{
+  display: -webkit-box;
+  display: box;
+  padding: .22rem 0 .17rem;
+  border-bottom: 1px solid #d2d2d2;
+  background: #fff;
+  & > div {
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    text-align: center;
+    img{
+      width: .4rem;
+      margin: 0 auto .1rem;
+    }
+    & > * {
+      display: block;
+      font-size: .14rem;
+    }
+  }
+  .add-btns{
+    margin-top: .08rem;
+  }
+}
+.btn-border{
+  display: inline-block;
+  padding: 0 .1rem;
+  border: 1px solid #f35a52;
+  line-height: .24rem;
+  font-size: .14rem;
+  border-radius: .04rem;
+  color: #f35a52;
+}
+.apply-exchange-nav{
+  border-top: 1px solid #d2d2d2;
+  margin-top: .1rem;
+}
+.icon-password{
+  background-image: url(../images/icon-password.png);
+}
+
+/* 修改提现密码 */
+.modify-user{
+  padding: 0 .19rem .11rem;
+  dt{
+    margin-bottom: .04rem;
+    line-height: .35rem;
+    font-size: .14rem;
+  }
+  dd{
+    margin-bottom: .1rem;
+  }
+}
+<div className="dialog">
+//                    <div className="dialog-confirm">
+//                        <header>支付宝</header>
+//                        <section>
+//                            <dl className="modify-user">
+//                                <dt>
+//                                    <h3>绑定<span className="c-red">实名认证</span>过的支付宝账号</h3>
+//                                </dt>
+//                                <dd className="input-box">
+//                                    <input className="small-input" type="text" placeholder="支付宝收款人姓名"/>
+//                                </dd>
+//                                <dd className="input-box">
+//                                    <input className="small-input" type="text" placeholder="支付宝收款人账号"/>
+//                                </dd>
+//                            </dl>
+//                        </section>
+//                        <footer>
+//                            <a href="" className="react">取消</a>
+//                            <a href="" className="react">确定</a>
+//                        </footer>
+//                    </div>
+//                </div>
+//                <div className="dialog">
+//                    <div className="dialog-confirm">
+//                        <header>微信钱包</header>
+//                        <section>
+//                            <dl className="modify-user">
+//                                <dt>
+//                                    <h3>请填写<span className="c-red">绑定微信钱包</span>的银行卡姓名</h3>
+//                                </dt>
+//                                <dd className="input-box">
+//                                    <input className="small-input" type="text" placeholder="微信收款人姓名"/>
+//                                </dd>
+//                            </dl>
+//                        </section>
+//                        <footer>
+//                            <a href="" className="react">取消</a>
+//                            <a href="" className="react">确定</a>
+//                        </footer>
+//                    </div>
+//                </div>
+//                <div className="dialog">
+//                    <div className="dialog-alert">
+//                        <header>添加成功</header>
+//                        <section>
+//                            <p className="msg">您可以到<span className="c-red">收入查询</span>申请提现</p>
+//                        </section>
+//                        <footer>
+//                            <a href="" className="react">我知道了</a>
+//                        </footer>
+//                    </div>
+//                </div>
+//                <div className="dialog">
+//                    <div className="dialog-alert">
+//                        <header>添加成功</header>
+//                        <section>
+//                            <p className="msg">您牢记，您的密码：<span className="c-red">123456</span></p>
+//                        </section>
+//                        <footer>
+//                            <a href="" className="react">我知道了</a>
+//                        </footer>
+//                    </div>
+//                </div>

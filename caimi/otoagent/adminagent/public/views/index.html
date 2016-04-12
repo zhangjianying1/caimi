@@ -1,0 +1,78 @@
+
+        <style>
+            .swiper{
+                width:100%;
+                height: 300px;
+                position:relative;
+                overflow:hidden;
+            }
+            .swiper img{
+                width:100%;
+                height:auto;
+            }
+            li{
+                margin:0;
+                padding:0;
+                list-style:none;
+            }
+            .swiper > div {
+                width:1000px;
+                height:100%;
+                position:absolute;
+                left:0;
+                top:0;
+            }
+            .swiper a{
+                float:left;
+            }
+            .control{
+                position:absolute;
+                width:100%;
+                bottom:0 !important;
+                top: auto !important;
+                left:0;
+                height:30px !important;
+                background:#f90;
+            }
+            .control li{
+                float:left;
+            }
+            li.active{
+                color:#f00;
+            }
+
+        </style>
+        <swiper>
+
+        </swiper>
+
+<div class="header" >
+    <div class="page-header bs-docs-header">
+        <h1 ng-click="show()">代理商管理系统</h1>{{ a }}
+        {{ user }}
+        <span ng-if="user" ng-click="bb()">你好！{{ user }} <a ng-click="loginout()">登出</a></span>
+        <span ng-if="!user" ng-click="loginIn()">登录</span>
+        <input type="checkbox" id="box">
+
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row" >
+        <div class="sidebar affix"  ng-controller="SidebarCtrl">
+            <ul class="nav">
+
+                <sidebar>
+                    <pane ng-repeat="item in sidebarItems" title="{{ item.title }}">
+                        <ul class="nav col-md-offset-1">
+                            <li ng-repeat="body in item.bodys"><a ui-sref-active="active" ui-sref="{{ body.href }}">{{ body.title }}</a></li>
+                        </ul>
+                    </pane>
+                </sidebar>
+            </ul>
+        </div>
+        <div class="col-md-10 col-md-offset-2" ui-view>
+
+        </div>
+    </div>
+</div>
+<login></login>

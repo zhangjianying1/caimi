@@ -1,0 +1,57 @@
+/* view */
+.dialog{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right:0;
+  botton:0;
+  z-index: 9;
+  background: rgba(0, 0, 0, .6);
+  & > div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50% , -50%);
+    transform: translate(-50% , -50%);
+    background: #fff;
+    overflow:hidden;
+  }
+}
+.dialog-confirm, .dialog-alert{
+  width: 2.6rem;
+  border-radius: .04rem;
+  header{
+    line-height: .36rem;
+    font-size: .15rem;
+    color: #fff;
+    background: #f25a52;
+    text-align: center;
+  }
+  .msg{
+    min-height: .89rem;
+    padding: .3rem 0 .17rem;
+    font-size: .14rem;
+    text-align: center;
+  }
+  footer{
+    display: -webkit-box;
+    display: box;
+    border-top: 1px solid #eee;
+    -webkit-box-align: center;
+    box-align: center;
+    a{
+      display: block;
+      -webkit-box-flex: 1;
+      box-flex: 1;
+      line-height: .4rem;
+      font-size: .17rem;
+      color: #f25a52;
+      text-align: center;
+      &:first-child{
+        border-right: 1px solid #eee;
+      }
+    }
+  }
+}

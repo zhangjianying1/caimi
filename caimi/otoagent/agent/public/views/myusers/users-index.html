@@ -1,0 +1,105 @@
+
+    <header>
+        <div class="back"><a href="javascript:history.go(-1)"></a></div>
+        <span class="title">我的用户</span>
+    </header>
+    <section id="wrapper">
+        <div class="page">
+            <div class="usersmanage">
+                <menu>
+                    <ul class="tab-menu">
+                        <li ui-sref-active="active" ui-sref=".usersearch">用户查询</li>
+                        <li ui-sref-active="active"  ui-sref=".sendmsg">群发短信</li>
+                        <li ui-sref-active="active" ui-sref=".cluster">群组管理</li>
+                    </ul>
+                </menu>
+                <section class="tab-cont" ui-view>
+                    <!-- 用户查询 begin -->
+
+                    <!-- 短信 begin -->
+                    <!-- 短信 end -->
+                    <!-- 群组管理 begin -->
+
+                    <!-- 群组管理 end -->
+                </section>
+            </div>
+        </div>
+
+    </section>
+
+<section class="mask" >
+    <div class="layout">
+        <h2 class="layout-header">新建群组</h2>
+        <div class="layout-body">
+            <input type="number" value="" placeholder="请输入群组的名称">
+            <span class="input-tip"><b>*</b>群组名为2-6个汉子</span>
+        </div>
+        <div class="layout-footer">
+            <a href="" class="cancel">取消</a>
+            <a href="" class="confirm">确定</a>
+        </div>
+    </div>
+</section>
+<section class="mask creategroup" >
+    <form>
+    <div class="layout">
+        <h2 class="layout-header">请选择要添加的用户</h2>
+        <div class="layout-body" id="wrapper2">
+            <ul class="bor-list">
+                <li>
+                    <em>13131430669</em>
+                    <span class="checkbox"><input type="checkbox"><span></span></span>
+                </li>
+                <li>
+                    <em>13131430669</em>
+                    <span class="checkbox"><input type="checkbox"><span></span></span>
+                </li>
+                <li>
+                    <em>13131430669</em>
+                    <span class="checkbox"><input type="checkbox"><span></span></span>
+                </li>
+                <li>
+                    <em>13131430669</em>
+                    <span class="checkbox"><input type="checkbox"><span></span></span>
+                </li>
+                <li>
+                    <em>13131430669</em>
+                    <span class="checkbox"><input type="checkbox"><span></span></span>
+                </li>
+                <li>
+                    <em>13131430669</em>
+                    <span class="checkbox"><input type="checkbox"><span></span></span>
+                </li>
+                <li>
+                    <em>13131430669</em>
+                    <span class="checkbox"><input type="checkbox"><span></span></span>
+                </li>
+                <li>
+                    <em>13131430669</em>
+                    <span class="checkbox"><input type="checkbox"><span></span></span>
+                </li>
+                <li>
+                    <em>13131430669</em>
+                    <span class="checkbox"><input type="checkbox"><span></span></span>
+                </li>
+                <li>
+                    <em>13131430669</em>
+                    <span class="checkbox"><input type="checkbox"><span></span></span>
+                </li>
+                <li>
+                    <em>13131430669</em>
+                    <span class="checkbox"><input type="checkbox"><span></span></span>
+                </li>
+                <li>
+                    <em>13131430669</em>
+                    <span class="checkbox"><input type="checkbox"><span></span></span>
+                </li>
+            </ul>
+        </div>
+        <div class="layout-footer">
+            <a href="" class="cancel">取消</a>
+            <a href="" class="confirm">确定</a>
+        </div>
+    </div>
+    </form>
+</section>

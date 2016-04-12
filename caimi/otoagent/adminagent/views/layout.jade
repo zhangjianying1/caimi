@@ -1,0 +1,19 @@
+doctype html
+html(ng-app="adminApp")
+  head
+    title= title
+    meta(chartset='utf-8')
+    meta(name="viewport" content="width=device-width" initial-scale="1.0" user-scalable="no")
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel="stylesheet" href="/stylesheets/style.css")
+    script(src="/javascripts/libs/angular.js")
+    script(src="/javascripts/libs/ui-route.js")
+    script(src="/javascripts/libs/angular-sanitize.js")
+    script(src="//cdn.bootcss.com/angular-ui-bootstrap/0.13.4/ui-bootstrap-tpls.js")
+    script(src="//cdn.bootcss.com/angular-ui-bootstrap/0.13.4/ui-bootstrap.js")
+    script(src="/javascripts/controllers/controller.js")
+    script(src="/javascripts/services/service.js")
+    script(src="/javascripts/directives/directive.js")
+    script(src="/javascripts/app.js")
+  body
+    block content

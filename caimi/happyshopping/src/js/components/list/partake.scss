@@ -1,0 +1,38 @@
+.all-partake-cont{
+  padding: 0 .12rem;
+  background: #efefef;
+}
+.all-partake-list{
+  border-left: 1px solid #e5e5e5;
+  margin-left: .32rem;
+  li{
+    padding: .125rem 0;
+    -webkit-transform: translateX(-.2rem);
+    transform: translateX(-.2rem);
+    position: relative;
+    .user-photo{
+      width: .4rem;
+      height: .4rem;
+      float:left;
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+      }
+    }
+    .user-msg{
+      margin-left: .5rem;
+      font-size: .13rem;
+      strong{
+        float: right;
+      }
+    }
+    .user-count{
+      padding-top: .04rem;
+
+      font-size: .11rem;
+      color: #a7a7a7;
+    }
+  }
+
+}

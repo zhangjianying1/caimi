@@ -1,0 +1,37 @@
+.income-query .income-query-ban {
+  background: #fff; }
+  .income-query .income-query-ban img {
+    display: block;
+    width: 2.2rem;
+    margin: 0 auto; }
+
+.income-query .coupon-count {
+  padding: .15rem 0 .08rem;
+  text-align: center;
+  background: #fff; }
+  .income-query .coupon-count h3 {
+    font-size: .14rem; }
+  .income-query .coupon-count .c-red {
+    line-height: .38rem;
+    font-size: .3rem; }
+
+.income-query .coupon-detail {
+  height: .5rem; }
+  .income-query .coupon-detail > div {
+    height: .32rem; }
+  .income-query .coupon-detail .coupon-number {
+    font-size: .17rem;
+    line-height: .17rem; }
+
+.income-query .income-nav {
+  margin-top: .1rem; }
+
+.exchange-btns {
+  padding: 0 .3rem;
+  margin-top: .5rem; }
+
+.icon-price {
+  background-image: url(../images/icon-price.png); }
+
+.icon-invitationincome {
+  background-image: url(../images/icon-prefect.png); }

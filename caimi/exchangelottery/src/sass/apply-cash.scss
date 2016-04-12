@@ -1,0 +1,53 @@
+.apply-input{
+  border-top: 1px solid #d2d2d2;
+  padding-top: .18rem;
+  & > div{
+    height: .5rem;
+    padding: 0 .15rem;
+    border-bottom: 1px solid #d2d2d2;
+    line-height: .5rem;
+    font-size: .16rem;
+    text-align: right;
+    background: #fff;
+  }
+  & > div:last-child{
+    padding-right: .3rem;
+  }
+  .bor-none{
+    padding-right: .1rem;
+    border: none;
+    text-align: right;
+    font-size: .16rem;
+    color: #aaa;
+  }
+}
+.apply-des{
+  height: .57rem;
+  margin-top: .1rem;
+  & > div{
+    height: .34rem;
+  }
+  .column-strong{
+    font-size: .15rem;
+    line-height: .15rem;
+  }
+}
+.warm-tips{
+  padding-left: .1rem;
+  line-height: .29rem;
+  font-size: .12rem;
+  color: #666;
+}
+
+/* 选择提现 方式*/
+.select-list{
+  li{
+    padding: 0 .15rem;
+    border-top: 1px solid #d2d2d2;
+    line-height: .4rem;
+    font-size: .14rem;
+    &:nth-of-type(1){
+      border: none;
+    }
+  }
+}

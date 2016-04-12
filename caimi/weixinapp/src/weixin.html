@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
+    <style>
+        #d{position: relative;}
+        img {position: absolute;}
+    </style>
+</head>
+<body>
+<div id="d"></div>
+<input type="" style="position:fixed; bottom:0; left:0;"/>
+<script>
+
+    var str = [{src: '/images/2.png', width: 640, height: 389},  {src: '/images/1.png', width: 640, height: 162},
+        {src: '/images/user-center-photo.png', width: 124, height: 124},{src: '/images/1.png', width: 640, height: 162},
+        {src: '/images/user-center-photo.png', width: 124, height: 124},{src: '/images/1.png', width: 640, height: 162},{src: '/images/2.png', width: 640, height: 389},{src: '/images/2.png', width: 640, height: 389},{src: '/images/1.png', width: 640, height: 162},{src: '/images/1.png', width: 640, height: 162},{src: '/images/1.png', width: 640, height: 162},{src: '/images/1.png', width: 640, height: 162}]
+   function showPage(elem, cols) {
+       var rowArr = [];
+
+       var elemW = elem.clientWidth;
+       var imgW = elemW / cols;
+       var imgH = '';
+       var html = '';
+       for (var i = 0; i < cols; i ++) {
+           rowArr[i] = {
+               top:0,
+               left: i* imgW
+           }
+       }
+       var getIndex = function(arr){
+
+           var newArr = [];
+           for (var i = 0; i < arr.length; i ++) {
+               newArr[i] = arr[i].top;
+           }
+           return newArr.indexOf((Math.min.apply(null, newArr)));
+       }
+       return function(objArr){
+            for (var i = 0; i <objArr.length; i ++ ) {
+
+                imgH = objArr[i].height * imgW / objArr[i].width;
+                var index = getIndex(rowArr);
+                html += '<img src="' + objArr[i].src + '" width="' + imgW + 'px" height="' +  imgH + 'px" style="top:' + rowArr[index].top + 'px; left:' + rowArr[index].left + 'px"/>';
+                if (i < cols) {
+
+                    rowArr[i].top = imgH
+                    rowArr[i].left = imgW * i
+                } else {
+
+                    rowArr[index].top = rowArr[index].top + imgH
+                    rowArr[index].left = index * imgW;
+                }
+
+            }
+           return html;
+       }
+   }
+    var resultPage = showPage(document.querySelector('#d'), 2);
+    document.querySelector('#d').innerHTML = resultPage(str);
+
+</script>
+</body>
+
+
+</html>

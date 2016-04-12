@@ -1,0 +1,1 @@
+define(["jquery"],function(a){var b={data:{bBtn:!0},tab:function(c,d,e){c.each(function(c){a(this).on("touchend",function(){d.hide(),a(this).show().addClass("active"),d.hide(),d.eq(c).show(),e&&b.data.bBtn&&(b.data.bBtn=!1,e.call(this))})})}};return{tab:b.tab}});

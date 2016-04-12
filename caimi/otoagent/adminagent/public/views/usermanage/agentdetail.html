@@ -1,0 +1,79 @@
+<div class="containter">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="pane pane-default">
+                <div class="pane-header">
+                    基本信息
+                </div>
+                <div class="pane">
+                    <table class="table table-bordered">
+
+                        <tr>
+                            <td>代理商编号</td><td>{{ data.agentid }}</td>
+                        </tr>
+                        <tr>
+                            <td>手机号码</td><td>{{ data.mobile }}</td>
+                        </tr>
+                        <tr>
+                            <td>账户状态</td><td>{{ data.userstatus}} <a href="javascript:;" class="full-right" ng-click="changeStatus(data.agentid)">{{ data.changeText }}</a></td>
+                        </tr>
+                        <tr>
+                            <td>用户等级</td><td>{{ data.level }}</td>
+                        </tr>
+                        <tr>
+                            <td>注册区域</td><td>{{ data.province }} | {{ data.city }} | {{ data.area }}</td>
+                        </tr>
+                        <tr>
+                            <td>渠道类型</td><td>{{ data.channeltype }}</td>
+                        </tr>
+                        <tr>
+                            <td>站点编号</td><td>{{ data.number }}</td>
+                        </tr>
+                        <tr>
+                            <td>注册时间</td><td>{{ data.registertime | date:'yy-MM-dd hh:MM:ss' }}</td>
+                        </tr>
+                        <tr>
+                            <td>注册方式</td><td>{{ data.registermethod }}</td>
+                        </tr>
+                        <tr>
+                            <td>注册渠道</td><td>{{ data.registerchannel }}</td>
+                        </tr>
+                        <tr>
+                            <td>注册系统类型</td><td>{{ data.system}}</td>
+                        </tr>
+                        <tr>
+                            <td>登录时间</td><td>{{ data.logintime | date:'yy-MM-dd hh:MM:ss' }}<a ui-sref="index.loginlog({id: data.agentid })">日志</a></td>
+                        </tr>
+                        <tr>
+                            <td>登录软件版本</td><td>{{ data.loginsoftversion }}</td>
+                        </tr>
+                        <tr>
+                            <td>登录渠道</td><td>{{ data.loginchannel }}</td>
+                        </tr>
+                        <tr>
+                            <td>发展用户</td><td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <table class="table table-bordered text-center">
+                <tr>
+                    <td>累计注册代理商</td>
+                    <td>昨日注册</td>：
+                    <td>今日注册</td>
+                    <td>上月注册代理商</td>
+                    <td>当月注册代理商</td>
+                    <td>昨日登录</td>
+                    <td>今日登录</td>
+                </tr>
+                <tr>
+
+                    <td ng-repeat="i in userMsg">{{ i.count }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

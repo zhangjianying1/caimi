@@ -1,0 +1,123 @@
+.user-msg{
+  display: -webkit-box;
+  display: box;
+  height: 1.14rem;
+  padding: 0 .15rem;
+  -webkit-box-align: center;
+  box-align: center;
+  background-image: url('../../../images/user-msg.png');
+  background-size: cover;
+  box-shadow: 0px 3px 3px rgba(7,0,2, .2);
+  .user-photo{
+    width: .67rem;
+    height: .67rem;
+    border: .02rem solid #db696a;
+    margin-right: .24rem;
+    box-shadow: 0px 0px 3px #d12731;
+    border-radius: 50%;
+    img{
+      width: .63rem;
+      height: .63rem;
+      border-radius: 50%;
+    }
+  }
+  .user-name{
+    color: #fff;
+    h2{
+      font-size: .22rem;
+    }
+    p{
+      font-size: .16rem;
+    }
+  }
+}
+.bor-btn{
+  display: -webkit-box;
+  display: box;
+  height: .49rem;
+  border: 1px solid #f35a52;
+  margin: .1rem .15rem;
+  border-radius: .04rem;
+  -webkit-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  font-size: .16rem;
+  color: #f35a52;
+  text-align: center;
+  background: #fff;
+}
+.small-bor-btn{
+  display: inline-block;
+  line-height: .19rem;
+  padding: 0 .05rem;
+  border: 1px solid #f35a52;
+  border-radius: .02rem;
+  font-size: .13rem;
+  color: #f53a52;
+}
+.small-bor-btn-large{
+  padding: 0 .1rem;
+  line-height: .23rem;
+  font-size: .17rem;
+  border-radius: .04rem;
+}
+
+.icon-addadmin{
+  width: .22rem;
+  height: .25rem;
+  background-image: url(../../../images/icon-addadmin.png);
+}
+.icon-taskremind{
+  background-image: url(../../../images/icon-taskremind.png);
+}
+.icon-prefect{
+  background-image: url(../../../images/icon-prefect.png);
+}
+.icon-addmobile{
+  background-image: url(../../../images/icon-addmobile.png);
+}
+.icon-taskrecord{
+  background-image: url(../../../images/icon-taskrecord.png);
+}
+.icon-remindrecord{
+  background-image: url(../../../images/icon-remindrecord.png);
+}
+.icon-exchange{
+  background-image: url(../../../images/icon-exchange.png);
+}
+.icon-editadmin{
+  background-image: url(../../../images/icon-editadmin.png);
+}
+
+
+/* 修改个人信息*/
+.modify-user{
+  padding: 0 .19rem .11rem;
+  dt{
+    margin-bottom: .04rem;
+    line-height: .35rem;
+    font-size: .14rem;
+  }
+  dd{
+    margin-bottom: .1rem;
+  }
+}
+/* 添加管理员*/
+.add-admin{
+  padding-top: .13rem;
+}
+.weixin-user{
+  padding: .23rem .15rem .28rem;
+  font-size: .14rem;
+  text-align: center;
+  dt{
+    padding-bottom: .14rem;
+  }
+  img{
+    display: inline-block;
+    width: .48rem;
+    height: .48rem;
+    border-radius: .24rem;
+  }
+}

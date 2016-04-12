@@ -1,0 +1,19 @@
+.extension-query-ban {
+  text-align: center;
+  background: #fff; }
+  .extension-query-ban img {
+    display: inline-block;
+    width: 2.4rem; }
+
+.extension-query-count {
+  padding: .08rem 0 .12rem;
+  text-align: center;
+  background: #fff; }
+  .extension-query-count h3 {
+    font-size: .14rem; }
+  .extension-query-count .c-red {
+    line-height: .38rem;
+    font-size: .3rem; }
+
+.extension-query-detail {
+  height: .5rem; }

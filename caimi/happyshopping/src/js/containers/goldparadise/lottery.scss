@@ -1,0 +1,46 @@
+/* 领奖的状态 */
+.take-lottery-status{
+  height: .44rem;
+  padding: 0 .1rem;
+  background: #a7a7a7;
+  line-height: .44rem;
+  color: #fff;
+  font-size: .13rem;
+}
+.text-btn-box{
+  display: -webkit-box;
+  display: box;
+  height: 100%;
+  padding-left: .1rem;
+  -webkit-box-align: center;
+  box-align: center;
+  -webkit-box-pack: justify;
+  box-pack: justify;
+}
+
+.express-msg{
+  padding-top: .08rem;
+  line-height: .16rem;
+}
+.user-partake{
+  .active .icon-dorp-btn{
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+
+  .user-partake-list{
+    padding: .1rem;
+    overflow: hidden;
+    background: #efefef;
+
+
+    li{
+      height: .2rem;
+      line-height: .2rem;
+      padding: 0 .1rem;
+      float: left;
+      font-size: .1rem;
+      color: #a7a7a7;
+    }
+  }
+}

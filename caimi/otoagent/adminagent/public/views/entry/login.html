@@ -1,0 +1,19 @@
+<div  ng-show="login" >
+    <div class="mask" ng-show="login" style="position:fixed; width:100%;height:100%; background:rgba(0,0,0, .8); top:0;"></div>
+    <div class="panel panel-default" style="position:fixed; left:50%; top:50%; transform:translate(-50%, -50%)">
+        <div class="panel-body">
+            <form ng-submit="login()" name="frmLogin"  role="form" ng-controller="LoginCtrl">
+                <p ng-show="{{ frmLogin.name.$dirty}}">fdfsf</p>
+                <input name="name" ng-model="name" type="text" class="form-control input-lg" placeholder="请输入用户名" required autofocus />
+                {{ frmlogin.password.$dirty}}
+                <input name="password" ng-model="password" type="password" class="form-control input-lg" placeholder="密码" required />
+                <p ng-show=" isSubmit && (frmLogin.name.$dirty || frmLogin.password.$dirty )">
+                    <samll ng-show="result.error">{{ result.error }}</samll>
+                </p>
+                <button class="btn-lg btn-primary btn-block" ng-disabled="frmLogin.$invalid">登录</button>
+            </form>
+
+
+        </div>
+    </div>
+</div>

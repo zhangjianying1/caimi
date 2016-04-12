@@ -1,0 +1,179 @@
+
+.commodity-detail{
+  padding-bottom: .3rem;
+}
+.lottery-show{
+  background: #fff;
+}
+.lottery-imgs{
+  width: 100%;
+  height: 1.6rem;
+}
+.lottery-msg{
+  .buy-progress{
+    padding: 0 .15rem .15rem;
+
+
+  }
+}
+
+.lottery-name{
+  padding: .1rem .12rem;
+  .status-btn{
+    display: inline-block;
+    width: .35rem;
+    height: .17rem;
+    border: 1px solid #50aae9;
+    border-radius: .02rem;
+    line-height: .16rem;
+    font-size: .09rem;
+    color:#50aae9;
+    text-align: center;
+    vertical-align: 1px;
+    white-space: nowrap;
+  }
+  h2{
+    display: inline-block;
+    padding-left: .04rem;
+    font-size: .16rem;
+  }
+}
+.lottery-des{
+  padding: 0 .12rem;
+
+  color: #a7a7a7;
+  line-height: .14rem;
+}
+.prompt-box{
+  margin-top: .12rem;
+  border-bottom: 1px solid #c0693e;
+  line-height: .385rem;
+  font-size: .13rem;
+  color: #fff;
+  background: #ff5500;
+}
+/* 购买的进度（进行中）*/
+.buy-progress{
+  margin: .09rem 0 0;
+
+}
+/*（待开奖）*/
+.waiting-lottery{
+
+  text-align: center;
+}
+/* 已开奖 */
+.lucky-lottery{
+  padding: 0 .1rem;
+}
+.lucky-lottery-show{
+  padding: 0 .17rem;
+
+  background: #efefef;
+  .comd-left{
+    width: .44rem;
+    margin: .1rem .16rem 0 0;
+    -webkit-box-pack: start;
+    box-pack: start;
+  }
+  .c-l-img{
+    width: .44rem;
+    height: .44rem;
+    position: relative;
+
+  }
+  .icon{
+    width: .27rem;
+    height: .16rem;
+    background-size: cover;
+  }
+  .icon-king{
+    background-image: url(../../../images/icon-king.png);
+    position: absolute;
+    left: .085rem;
+    top: -.1rem;
+
+  }
+  .comd-right{
+    padding: .05rem 0;
+    lint-height: .2rem;
+  }
+}
+
+
+.user-partake-tit{
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  line-height: .44rem;
+  font-size: .13rem;
+  color: #666;
+  text-align: center;
+
+
+  .icon {
+    display: inline-block;
+    width: .14rem;
+    height: .09rem;
+    background-size: cover;
+  }
+  .icon-dorp-btn{
+    marign-left: .0.4rem;
+    background-image: url(../../../images/icon-more.png);
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
+}
+
+.other-list{
+  margin-top: .05rem;
+  border-top: 1px solid #f2f2f2;
+  background: #fff;
+  li a{
+    display: -webkit-box;
+    display: box;
+    padding-left: .16rem;
+    border-bottom: 1px solid #f2f2f2;
+    height: .4rem;
+    font-size: .13rem;
+    -webkit-box-align: center;
+    box-align: center;
+
+  }
+  .icon{
+    display: block;
+    width: .17rem;
+    height: .17rem;
+    margin-right: .08rem;
+    background-size: cover;
+  }
+  .icon-showimg{
+    background-image: url(../../../images/icon-showimg.png);
+  }
+  .icon-history{
+    background-image: url(../../../images/icon-history.png);
+  }
+  .icon-share{
+    background-image: url(../../../images/icon-share.png);
+  }
+}
+.tit-header{
+  margin-top: .05rem;
+  line-height: .4rem;
+  font-size: .13rem;
+  padding-left: .16rem;
+  border-bottom: 1px solid #f2f2f2;
+  background: #fff;
+
+}
+.fixed-bottom{
+
+  button {
+    width: 100%;
+    height: .44rem;
+    line-height: .44rem;
+    border: none;
+    font-size: .15rem;
+    color: #fff;
+    background: #ff5500;
+  }
+}

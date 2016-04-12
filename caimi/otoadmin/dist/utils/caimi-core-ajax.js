@@ -1,0 +1,1 @@
+define(["zepto","utils/caimi-core-islogin","utils/caimi-version"],function(a,b,c){var d=!1,e={};e=b.getData();var f=function(b,c,e){d?a.getJSON(b,c,function(a){e(a)}):a.ajax({type:"post",data:c,url:b,dataType:"json",success:function(a){e(a)},error:function(){e({error:1})}})};return{post:f,version:c,loginStatus:e}});

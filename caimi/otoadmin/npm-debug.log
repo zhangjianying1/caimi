@@ -1,0 +1,43 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'gade\\' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json grunt@0.4.5 No README data
+6 warn package.json dateformat@1.0.2-1.2.3 No repository field.
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'gade\\', null ]
+9 verbose cache add name=undefined spec="gade\\" args=["gade\\",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'gade/',
+10 verbose parsed url   path: 'gade/',
+10 verbose parsed url   href: 'gade/' }
+11 silly lockFile 444da33c-gade gade\
+12 verbose lock gade\ C:\Users\Administrator\AppData\Roaming\npm-cache\444da33c-gade.lock
+13 silly lockFile 444da33c-gade gade\
+14 silly lockFile 444da33c-gade gade\
+15 error addLocal Could not install gade\
+16 error Error: ENOENT, stat 'D:\项目文件\oto后台\gade'
+17 error If you need help, you may report this *entire* log,
+17 error including the npm and node versions, at:
+17 error     <http://github.com/npm/npm/issues>
+18 error System Windows_NT 6.1.7601
+19 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "gade\\"
+20 error cwd D:\项目文件\oto后台
+21 error node -v v0.10.32
+22 error npm -v 1.4.28
+23 error path D:\项目文件\oto后台\gade
+24 error code ENOENT
+25 error errno 34
+26 verbose exit [ 34, true ]

@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <form class="form form-inline"  ng-submit="searchLoginLog()">
+            <div class="form-group">
+                <label>登录时间：</label>
+                <input type="text" class="form-control" placeholder="输入查询时间" ng-model="startime">
+                <input type="text" class="form-control" placeholder="输入查询时间" ng-model="endtime">
+            </div>
+            <div class="form-group">
+                <button type="submit"  class="btn btn-default">查询</button>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <h3>登录日志</h3>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>代理商编号</th>
+                <th>手机号</th>
+                <th>登录时间</th>
+                <th>登录渠道</th>
+                <th>软件版本</th>
+                <th>设备名称</th>
+                <th>设备串号</th>
+                <th>系统名称</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="i in bodys.page">
+                <td >{{ i.agentid }}</td>
+                <td >{{ i.mobile }}</td>
+                <td >{{ i.logintime | date:"yy-MM-dd hh:MM:ss" }}</td>
+                <td >{{ i.loginchannel }}</td>
+                <td >{{ i.softversion }}</td>
+                <td >{{ i.devicename }}</td>
+                <td >{{ i.devicecode }}</td>
+                <td >{{ i.system }}</td>
+            </tr>
+            </tbody>
+            <tfoot ng-show="bodys.body.length">
+            <tr>
+                <td colspan="15">
+                    <pages itemtotal="{{ bodys.body.length }}" itempage="1" listsize="5">
+                        <ul class="pagination">
+                            <li class="{disabled: isFirst()}" ng-click="previous()"><a href="javascript:;" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                            <li ng-repeat="page in pages" ng-class="{active: page.active}" ng-click="selectPage(page.index)"><a href="javascript:;">{{ page.text }} <span class="sr-only"></span></a></li>
+                            <li class="{disabled: isLast()}" ng-click="next()"><a href="javascript:;" aria-label="Previous"><span aria-hidden="true">&raquo;</span></a></li>
+                        </ul>
+                    </pages>
+                </td>
+            </tr>
+            </tfoot>
+        </table>
+   </div>
+</div>

@@ -1,0 +1,128 @@
+@charset "UTF-8";
+.user-msg {
+  display: -webkit-box;
+  display: box;
+  height: 1.14rem;
+  padding: 0 .15rem;
+  -webkit-box-align: center;
+  box-align: center;
+  background-image: url("../images/user-msg.png");
+  background-size: cover;
+  box-shadow: 0px 3px 3px rgba(7, 0, 2, 0.2); }
+  .user-msg .user-photo {
+    width: .67rem;
+    height: .67rem;
+    border: .02rem solid #db696a;
+    margin-right: .24rem;
+    box-shadow: 0px 0px 3px #d12731;
+    border-radius: 50%; }
+    .user-msg .user-photo img {
+      width: .63rem;
+      height: .63rem;
+      border-radius: 50%; }
+  .user-msg .user-name {
+    color: #fff; }
+    .user-msg .user-name h2 {
+      font-size: .18rem; }
+    .user-msg .user-name p {
+      font-size: .15rem; }
+    .user-msg .user-name .icon {
+      width: .18rem;
+      height: .18rem;
+      margin-right: .05rem; }
+    .user-msg .user-name .icon-user-emial {
+      background-image: url(../images/icon-user-msg.png);
+      background-position: 0 .02rem; }
+    .user-msg .user-name .icon-user-phone {
+      background-image: url(../images/icon-user-msg.png);
+      background-position: 0 .17rem; }
+
+.bor-btn {
+  display: -webkit-box;
+  display: box;
+  height: .49rem;
+  border: 1px solid #f35a52;
+  margin: .1rem .15rem;
+  border-radius: .04rem;
+  -webkit-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  font-size: .16rem;
+  color: #f35a52;
+  text-align: center;
+  background: #fff; }
+
+.small-bor-btn {
+  display: inline-block;
+  line-height: .19rem;
+  padding: 0 .05rem;
+  border: 1px solid #f35a52;
+  border-radius: .02rem;
+  font-size: .13rem;
+  color: #f53a52; }
+
+.small-bor-btn-large {
+  padding: 0 .1rem;
+  line-height: .23rem;
+  font-size: .17rem;
+  border-radius: .04rem; }
+
+.icon-code {
+  width: .22rem;
+  height: .215rem;
+  background-image: url(../images/icon-code.png); }
+
+.icon-public-manage {
+  background-image: url(../images/icon-public-manage.png); }
+
+.icon-addmobile {
+  background-image: url(../images/icon-addmobile.png); }
+
+.icon-extension {
+  background-image: url(../images/icon-extension.png); }
+
+.icon-activity {
+  background-image: url(../images/icon-activity.png); }
+
+.icon-editadmin {
+  background-image: url(../images/icon-editadmin.png); }
+
+.icon-switch {
+  width: .41rem;
+  height: .24rem;
+  background: #d2d2d2;
+  border-radius: .11rem;
+  position: absolute;
+  right: .15rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .icon-switch:after {
+    display: inline-block;
+    content: "";
+    width: .22rem;
+    height: .22rem;
+    border-radius: .11rem;
+    background: #fff;
+    -webkit-transform: translate3d(0.01rem, 0.01rem, 0);
+    transform: translate3d(0.01rem, 0.01rem, 0); }
+  .icon-switch.trans-open {
+    background: #f25a52; }
+    .icon-switch.trans-open:after {
+      -webkit-transform: translate3d(0.18rem, 0.01rem, 0);
+      transform: translate3d(0.18rem, 0.01rem, 0); }
+
+/* 修改个人信息 */
+.modify-user {
+  padding: 0 .19rem .11rem; }
+  .modify-user dt {
+    margin-bottom: .04rem;
+    line-height: .35rem;
+    font-size: .14rem; }
+  .modify-user dd {
+    margin-bottom: .1rem; }
+
+/* 添加管理员 */
+.add-admin {
+  padding-top: .13rem; }

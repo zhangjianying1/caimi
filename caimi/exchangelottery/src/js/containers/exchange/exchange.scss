@@ -1,0 +1,63 @@
+.exchange .coupon-des{
+  padding: .1rem;
+}
+.coupon{
+  padding-bottom: .05rem;
+  border-radius: .04rem;
+  background: #fff;
+  text-align: center;
+  box-shadow: 1px 1px 1px rgba(7 , 0 , 2 , .12);
+  overflow: hidden;
+  .c-header{
+    height: .57rem;
+    line-height: .47rem;
+    background-image: url(../../../images/coupon-bg2.png);
+    background-position: 0 bottom;
+    background-repeat: repeat-x;
+    background-size: .055rem .502rem;
+    color: #fff;
+    font-size: .17rem;
+  }
+  .c-number{
+    padding: .2rem 0 .1rem;
+    font-size: .18rem;
+  }
+  .c-number-input{
+    padding: .1rem .3rem .035rem;
+  }
+  .c-status{
+    height: .18rem;
+    font-size: .13rem;
+  }
+}
+
+/* 卡劵兑换成功*/
+.exchange-success{
+  .e-s-des{
+    padding-top: .3rem;
+    text-align: center;
+    img{
+      width: .55rem;
+    }
+    .e-s-coupon{
+      display: inline-block;
+      padding: .14rem 0 .07rem;
+      font-size: .17rem;
+    }
+    p{
+      font-size: .13rem;
+      color: #999;
+    }
+  }
+  .e-s-price{
+    display: inline-block;
+    padding-top: .35rem;
+    font-size: .45rem;
+    .e-s-price-word{
+      font-size: .18rem;
+    }
+  }
+}
+.coupon-sub{
+  padding: .5rem .3rem 0;
+}

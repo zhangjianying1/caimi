@@ -1,0 +1,84 @@
+.commodity-list{
+  background: #fff;
+  overflow: hidden;
+  li{
+    width: 50%;
+    padding: 0 .08rem .1rem;
+    border-bottom: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+    float: left;
+    .commodigy-img{
+      position: relative;
+      width: 70%;
+      padding-bottom: 70%;
+      margin: 0 auto;
+      background-size: cover;
+      background-repeat: center;
+    }
+    &:nth-of-type(1*n) {
+      border: none;
+    }
+  }
+}
+
+.commodity-name{
+  margin-bottom: .12rem;
+  text-align: center;
+}
+.commodigy-show-buy{
+  display: -webkit-box;
+  display: box;
+}
+.buy-progress{
+  margin-left: .09rem;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+}
+
+.buy-btn{
+  width: .32rem;
+  height: .19rem;
+  margin-left: .09rem;
+  line-height: .19rem;
+  border: 1px solid #fc5700;
+  border-radius: .03rem;
+  color: #fc5700;
+  text-align: center;
+  font-size: 9px;
+}
+.progress-line{
+  width: 100%;
+  height: .05rem;
+  border-radius: .03rem;
+  background: #d8d8d8;
+  position: relative;
+  span{
+    height: 100%;
+    position: absolute;
+    border-radius: .03rem;
+    background-image: -webkit-linear-gradient( left,#fcbe2f,#fe1504);
+    background-image: linear-gradient( left,#fcbe2f,#fe1504);
+  }
+}
+.progress-line-sup{
+  display: -webkit-box;
+  display: box;
+  padding-top: .05rem;
+  font-size: .1rem;
+  color: #a7a7a7;
+  box-pack: justify;
+  div{
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    p{
+      line-height: .12rem;
+    }
+    &:last-child{
+      text-align: right;
+      span{
+        color: #ff5800;
+        font-weight: bold;
+      }
+    }
+  }
+}

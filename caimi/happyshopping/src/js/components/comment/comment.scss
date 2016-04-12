@@ -1,0 +1,38 @@
+.share-lottery-comment{
+  border-top: 1px solid #e5e5e5;
+  background: #efefef;
+  .comd-right{
+    margin: -.02rem .15rem 0 0;
+
+  }
+}
+.comment-header{
+  padding-left: .1rem;
+  line-height: .31rem;
+
+}
+.comment-floor{
+  float: right;
+  font-size: .11rem;
+  color: #a7a7a7;
+}
+.floor-master{
+  display: inline-block;
+  padding: 0 .04rem;
+  margin-left: .05rem;
+  border-radius: .02rem;
+  height: .14rem;
+  line-height: .14rem;
+  background: #55a6e5;
+  font-size: .09rem;
+  color: #fff;
+  vertical-align: middle;
+}
+.comment-reply{
+  padding: .05rem;
+  margin: .05rem 0;
+  background: #e5e5e5;
+  line-height: .18rem;
+  color: #a7a7a7;
+  font-size: .11rem;
+}

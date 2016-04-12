@@ -1,0 +1,28 @@
+.icon-switch{
+  width: .41rem;
+  height: .24rem;
+  background: #d2d2d2;
+  border-radius: .11rem;
+  position: absolute;
+  right: .15rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  &:after{
+    display: inline-block;
+    content: "";
+    width: .22rem;
+    height: .22rem;
+    border-radius: .11rem;
+    background: #fff;
+    -webkit-transform: translate3d(.01rem , .01rem , 0);
+    transform: translate3d(.01rem , .01rem , 0);
+  }
+  &.trans-open{
+    background: #f25a52;
+    &:after{
+      -webkit-transform: translate3d(.18rem , .01rem , 0);
+      transform: translate3d(.18rem , .01rem , 0);
+    }
+  }
+}

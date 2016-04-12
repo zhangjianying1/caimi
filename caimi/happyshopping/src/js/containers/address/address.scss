@@ -1,0 +1,87 @@
+.usercenter-address{
+
+}
+.address-list{
+  li{
+    position: relative;
+    padding-left: .24rem;
+    margin-bottom: .08rem;
+    background: #fff;
+    overflow: hidden;
+
+    &.active{
+      background: #ff5500;
+      .a-cont{
+        color: #fff;
+        padding-bottom: .22rem;
+
+      }
+    }
+  }
+
+  .a-cont{
+    padding: .15rem;
+    .a-header{
+      margin-bottom: .12rem;
+      line-height: .27rem;
+      font-size: .16rem;
+
+      strong{
+        padding-right: .66rem;
+      }
+    }
+    p{
+      line-height: .19rem;
+      font-size: .11rem;
+
+    }
+  }
+}
+
+
+.address-default{
+  margin: .14rem 0 0 -.1rem;
+  line-height: .17rem;
+  font-size: .12rem;
+  color: #fff;
+  .icon{
+    width: .2rem;
+    height: .2rem;
+    position: absolute;
+    bottom: .2rem;
+    right: .15rem;
+
+  }
+
+
+  .icon-defalt-address{
+    background-image: url(../../../images/icon-default.png);
+  }
+}
+.a-basic {
+  border-top: 1px solid #e5e5e5;
+  margin-bottom: .06rem;
+  background: #fff;
+
+  &:first-child{
+    margin-top: .11rem;
+    border: none;
+  }
+  .a-detail{
+    display: block;
+    min-height: .8rem;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+  }
+}
+.address-control{
+  display: -webkit-box;
+  display: box;
+  -webkit-box-pack: justify;
+  box-pack: justify;
+  padding: 0 .46rem;
+  margin-top: .47rem;
+  .btn-small{
+    width: 1.02rem;
+  }
+}

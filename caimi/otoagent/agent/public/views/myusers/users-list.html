@@ -1,0 +1,41 @@
+
+    <header>
+        <div class="back"><a href="javascript:history.go(-1)"></a></div>
+        <span class="title">用户列表</span>
+    </header>
+    <section id="wrapper">
+        <div class="page">
+            <div class="users-wrap">
+                <menu>
+                    <ul class="menu-list">
+                        <li >投注金额<span class="sort-btns"><i class="icon-up"></i><i class="icon-down active"></i></span></li>
+                        <li >注册充值<span class="sort-btns"><i class="icon-up"></i><i class="icon-down"></i></span></li>
+                        <li >最后充值<span class="sort-btns"><i class="icon-up"></i><i class="icon-down"></i></span></li>
+                    </ul>
+                </menu>
+                <section class="users-show">
+                    <ul class="users-list">
+                        <li ng-repeat="user in users.result">
+                            <a href="/views/#/userdetail/{{ user.id }}">
+                                <div class="price">
+                                    <span class="user-name"><i class="icon-user"></i>{{ user.mobile }}</span>
+                                    <span class="user-price"><i class="icon-price"></i>{{ user.bettingAmount }}</span>
+                                </div>
+                                <div class="time">
+                                    <time>2015/04/04</time>
+                                    <time>12:34</time>
+                                </div>
+                                <div class="time">
+                                    <time>2015/04/04</time>
+                                    <time>12:34</time>
+                                </div>
+                                <i class="icon-more"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+    </section>
